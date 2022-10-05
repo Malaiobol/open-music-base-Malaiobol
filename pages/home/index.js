@@ -1,23 +1,27 @@
 function arrayRender(array) { 
 
     const ulMain = document.querySelector("#album-list");
-
     array.forEach(element => {
 
-        const li   = document.createElement("li");
-        const div1 = document.createElement("div");
-        const div2 = document.createElement("div");
-        const div3 = document.createElement("div");
-        const img  = document.createElement("img");
-        const p1   = document.createElement("p");
-        const p2   = document.createElement("p");  
-        const p3   = document.createElement("p");
-        const p4   = document.createElement("p");
-        const p5   = document.createElement("p");
+        const li     = document.createElement("li");
+        const div1   = document.createElement("div");
+        const div2   = document.createElement("div");
+        const div3   = document.createElement("div");
+        const img    = document.createElement("img");
+        const p1     = document.createElement("p");
+        const p2     = document.createElement("p");  
+        const p3     = document.createElement("p");
+        const p4     = document.createElement("p");
+        const p5     = document.createElement("p");
         const button = document.createElement("button");
 
         p1.innerText = element.title;
-        p2.innerText = element.category;
+        categories.forEach( newElement => {
+            const comparative = categories.indexOf(newElement, 0);
+            if(element.category == comparative){
+                p2.innerText = newElement;
+            }
+        }) 
         p3.innerText = `R$${element.price},00`;
         img.src = element.img;
         p4.innerText = element.band;
@@ -33,6 +37,7 @@ function arrayRender(array) {
         div3.classList.add("flex-between-center");
         p3.classList.add("album-value");
         p2.classList.add("album-phrase");
+        p2.classList.add("value");
         p4.classList.add("album-phrase");
         p5.classList.add("album-phrase");
         button.classList.add("buy-button");
