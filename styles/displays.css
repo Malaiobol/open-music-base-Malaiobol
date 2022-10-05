@@ -1,0 +1,29 @@
+.flex {
+    display: flex;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around-center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-auto{
+    margin: auto;
+}

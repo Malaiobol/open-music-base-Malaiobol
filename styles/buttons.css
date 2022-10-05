@@ -1,0 +1,66 @@
+button{
+    cursor: pointer;
+}
+
+.dark-mode-toggle{
+    width: 36px;
+    height: 36px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background-color: var(--color-grey-7);
+}
+
+.dark-mode-img{
+    padding: 09px;
+}
+
+.dark-mode-toggle:hover{
+    background-color: var(--color-grey-5);
+}
+
+.filter-button{
+    margin-top: 25px;
+    margin-left: 25px;
+
+    max-width: max-content;
+    height: 32px;
+
+    border: 1px, solid var(--color-grey-2);
+    background-color: var(--color-grey-8);
+
+    color: var(--color-grey-2);
+    font-weight: 500;
+        
+    border-radius: 4px;
+
+    padding: 0px 8px 0px 8px;
+}
+
+.filter-button:hover{
+    background-color: var(--color-grey-1);
+
+    color: var(--color-grey-9);
+}
+
+.buy-button{
+    margin-right: 20px;
+
+    border: 1px solid var(--color-grey-7);
+    background-color: var(--color-grey-7);
+
+    border-radius: 6px;
+    padding: 8px;
+
+    font-weight: 500;
+    color: var(--color-grey-2)
+}
+
+.buy-button:hover{
+    background-color: var(--color-grey-1);
+    border: 1px solid var(--color-grey-1);
+
+    color: var(--color-grey-7);
+}

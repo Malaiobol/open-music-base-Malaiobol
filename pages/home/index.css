@@ -1,1 +1,8 @@
-/* Desenvolva sua estilização aqui ... */
+/*SIZES*/
+
+:root{
+    --full-percent: 100%;
+    --half-percent: 50%;
+
+    --container-size: 650px;
+}
