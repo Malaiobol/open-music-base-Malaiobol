@@ -25,7 +25,7 @@ function renderFilter(array) {
              arrayRender(products);
             }
 
-            const filteredAlbum = filterActivate(filter);
+            const filteredAlbum = filterActivate(filter, products);
 
             arrayRender(filteredAlbum);
         })
@@ -35,14 +35,19 @@ function renderFilter(array) {
 }
 renderFilter(categories)
 
-function filterActivate(value){
+function filterActivate(value) {
 
     filteredArray = [];
+    let minValue = parseInt(rangeInput[0].value);
+    let maxValue = parseInt(rangeInput[1].value);
+
 
     products.forEach((e) =>{
-        if(value == `${e.category}`){
+        if(value == `${e.category}` && e.price <= maxValue && e.price >= minValue){
             filteredArray.push(e);
         }
     })
     return filteredArray;
+
+    
 }

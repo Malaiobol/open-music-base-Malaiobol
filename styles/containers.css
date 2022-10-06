@@ -24,18 +24,6 @@ li{
     gap: 10px;
 }
 
-.range-section{
-    margin-top: 70px;
-
-    color: var(--color-grey-1);
-    font-weight: 600;
-}
-
-.value-range{
-    margin-top: 35px;
-    width: var(--full-percent);
-}
-
 .album-list{
     margin-top: 70px;
 
