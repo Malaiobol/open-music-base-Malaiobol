@@ -10,11 +10,11 @@ button{
 
     cursor: pointer;
 
-    background-color: var(--color-grey-7);
+    background-color: var(--color-grey-4);
 }
 
 .dark-mode-img{
-    padding: 09px;
+    padding: 10px;
 }
 
 .dark-mode-toggle:hover{
